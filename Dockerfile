@@ -21,7 +21,7 @@ FROM nginx:latest
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy built app to nginx's html directory
-COPY --from=build /app/dist/browser /usr/share/nginx/html
+COPY --from=build /app/dist/walk-my-dog-ui /usr/share/nginx/html
 
 # Expose port 80 for the app
 EXPOSE 80
